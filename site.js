@@ -34,11 +34,17 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            title: "Issac's Top 8 Movies of All Time",
+            owner: "Issac Eligulashvili",
+            github: "https://github.com/Issac-Eligulashvili?tab=repositories",
          
       }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getTextDate(dateArray) {
+                  
+            }
       }
 })
 
