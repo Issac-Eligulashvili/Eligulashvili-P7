@@ -43,7 +43,11 @@ const vue_app = Vue.createApp({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             getTextDate(dateArray) {
-                  return `${dateArray[1]}/${dateArray[2]}/${dateArray[0]}`
+                  const monthNames = [
+                        "January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                  ];
+                  return `${monthNames[dateArray[1] - 1]} ${dateArray[2]}, ${dateArray[0]}`
             },
             like(index) {
                   this.movies[index].likes++;
@@ -60,7 +64,9 @@ const vue_app = Vue.createApp({
                   }
             },
             textTime(minutes) {
-
+                  const hours = Math.trunc(minutes / 60);
+                  const min = minutes % 60;
+                  return `${hours}hr ${min}m`
             }
       }
 })

@@ -32,15 +32,15 @@
 
 	      <div class="row">
 
-	        <div class="col-md-6">
-	            <div class="thumbnail" v-for="(movie, index) in movies">
+	        <div class="col-md-6" v-for="(movie, index) in movies">
+	            <div class="thumbnail">
 
 						<img class="poster img-fluid" v-bind:src="movies[index].posters[movies[index].posterindex]" @click="posterClick(index)"/>
 						<div class="imageInfo">Poster {{movies[index].posterindex + 1}} of {{movies[index].posters.length}}</div>
 
 						<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}} </p>
-						<p class="runtime">Runtime:	{{movies[index].runtime}}</p>
+						<p class="runtime">Runtime:	{{textTime(movies[index].runtime)}}</p>
 						<p class="released">Released: {{getTextDate(movies[index].released)}} | Rated: {{movies[index].rating}}</p>
 						<p class="websites">Websites: <a v-bind:href="movies[index].imdb" target="_blank"> imdb</a> | <a v-bind:href="movies[index].website" target="_blank">website</a></p>
 
@@ -57,7 +57,7 @@
 	    <div class="footer">
 	      <div class="container">
 			<a id="github" class="btn btn-lg btn-warning" v-bind:href="github" target="_blank">
-				<i class="bi bi-github me-2">{{owner}}</i>
+				<i class="bi bi-github me-2">&nbsp{{owner}}</i>
 	  		</a>
 	      </div>
 	    </div>

@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Interstellar",
+            "iscore": 8.7,
+            "rating": "PG-13",
+            "runtime": 169,
+            "released": [2015, 11, 7],
+            "country": "USA",
+            "posters": ["img/interstellar1.webp", "img/interstellar2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0816692/",
+            "website": "https://www.paramountpictures.com/movies/interstellar",
+            "likes": 10838,
+            "dislikes": 0,
+            "posterindex": 0
+      },
+      {
+            "title": "Back To The Future",
+            "iscore": 8.5,
+            "rating": "PG",
+            "runtime": 169,
+            "released": [1985, 7    , 3],
+            "country": "USA",
+            "posters": ["img/backtothefuture1.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0088763/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_back%2520to%2520the%2520future",
+            "website": "https://www.backtothefuture.com/",
+            "likes": 7634,
+            "dislikes": 2345,
+            "posterindex": 0
+      },
+      {
+            "title": "La La Land",
+            "iscore": 8.0,
+            "rating": "PG-13",
+            "runtime": 128,
+            "released": [2016, 12 , 9],
+            "country": "USA",
+            "posters": ["img/lalaland1.jpg"],
+            "imdb": "https://www.imdb.com/title/tt3783958/",
+            "website": "https://shop.lionsgate.com/collections/la-la-land",
+            "likes": 4567,
+            "dislikes": 2389,
+            "posterindex": 0
       }
 ]
